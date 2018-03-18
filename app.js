@@ -1,3 +1,7 @@
-const jq = require('jquery');
+const $ = require('jquery');
 
-alert("hey");
+const button = $('<button/>').html('click me').on('click', function () {
+    alert("hey");
+});
+
+$('body').append(button);
